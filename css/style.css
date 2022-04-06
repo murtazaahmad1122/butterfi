@@ -379,12 +379,12 @@ img{
 	height:100%;
     z-index: 1;
     opacity: 1;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
-    transition: all 0.4s;
-    transform: skewX(-25deg);
+    /* transition: all 0.4s; */
+    /* transform: skewX(-25deg); */
 }
 
 .btn-style-two .txt{
@@ -399,7 +399,7 @@ img{
 }
 
 .btn-style-two:hover{
-	color: #141d38;
+	color: #3498DB;
 }
 
 /* Btn Style Three */
@@ -429,7 +429,7 @@ img{
 	height:100%;
     z-index: 1;
     opacity: 1;
-    background-color: #0060ff;
+    background-color: #000000;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -7162,7 +7162,7 @@ img{
 	content:'';
 	left:0px;
 	top:0px;
-	right:-200px;
+	right:0px;
 	bottom:0px;
 	border-radius:15px;
 	background-color:#e7f0ff;
