@@ -6252,7 +6252,7 @@ img{
 
 .main-footer.style-two{
 	background-image:none;
-	background-color:#141d38;
+	background-color:#3498DB;
 }
 
 .main-footer .pattern-layer-one{
@@ -6364,7 +6364,7 @@ img{
 	text-align:center;
 	line-height:40px;
 	display:inline-block;
-	background-color:#0060ff;
+	background-color: rgb(81 82 84);
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;

@@ -159,9 +159,9 @@ a,
 }
 
 .main-footer{
-	background: -webkit-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
+	background: -webkit-radial-gradient(circle farthest-corner at center center, #3498DB 0%, #3498DB 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #3498DB 0%, #3498DB 100%);
+    background: radial-gradient(circle farthest-corner at center center, #3498DB 0%, #3498DB 100%);
 }
 
 .service-block .inner-box:before{
