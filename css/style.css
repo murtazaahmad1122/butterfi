@@ -1192,7 +1192,13 @@ img{
 .sticky-header .main-menu .navigation > li > a{
 	color:#444444 !important;
 }
-
+.sticky-header .main-menu .navigation > li > a:active{
+	color:#0060ff !important;
+}
+.active{
+	color: #0060ff;
+	/* background-color: #000000; */
+}
 .sticky-header .main-menu .navigation > li:hover > a,
 .sticky-header .main-menu .navigation > li.current > a{
 	color:#0060ff;
@@ -5309,6 +5315,7 @@ img{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
+	margin-bottom: 25px;
 }
 
 .service-block-two .inner-box:hover .icon-box,
