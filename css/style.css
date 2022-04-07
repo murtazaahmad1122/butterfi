@@ -4727,7 +4727,7 @@ img{
 .about-section{
 	position:relative;
 	overflow:hidden;
-	padding:110px 0px 100px;
+	padding:50px 0px 0px;
 }
 
 .about-section .content-column{
@@ -7254,7 +7254,8 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:rgba(0,96,255,0.70);
+	background-color: #3498DB;
+
 }
 
 .about-section-two .image-column{
@@ -11845,7 +11846,7 @@ img{
 
 .team-page-section{
 	position:relative;
-	padding:110px 0px 70px;
+	/* padding:110px 0px 70px; */
 }
 
 /* RTL Code */

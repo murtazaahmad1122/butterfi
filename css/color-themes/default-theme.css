@@ -178,7 +178,7 @@ a,
 .feature-block-two .inner-box:hover::before,
 .sidebar .popular-posts .post .post-thumb .overlay-box,
 .instagram-widget .post-thumb .overlay-box{
-	background-color:rgba(0,96,255,0.70);
+	background-color: #3498DB;
 }
 
 .appointment-section .image-layer:before{
