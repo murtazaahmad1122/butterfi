@@ -840,7 +840,7 @@ img{
 
 .main-header .header-upper .outer-container{
 	position:relative;
-	padding: 0px 30px;
+	padding: 0px 330px 0px 0px;
 }
 
 .main-header .nav-outer{
@@ -1229,6 +1229,7 @@ img{
 	-o-transition:all 500ms ease;
 }
 
+
 .sticky-header .logo{
 	padding:7px 0px 6px;
 }
@@ -1237,6 +1238,7 @@ img{
 	z-index:999;
 	opacity:1;
 	visibility:visible;
+	padding: 0px 330px 0px 0px;
 	-ms-animation-name: fadeInDown;
 	-moz-animation-name: fadeInDown;
 	-op-animation-name: fadeInDown;
@@ -4797,8 +4799,8 @@ img{
 .feature-block .inner-box .feature-text{
 	position:relative;
 	color:#555555;
-	font-size:16px;
-	margin-top:5px;
+	font-size:24px;
+	/* margin-top:5px; */
 }
 
 .about-section .images-column{
@@ -5851,7 +5853,7 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:#3498DB;
+	/* background-color:#3498DB; */
 }
 
 .technology-section .pattern-layer-one{
@@ -5895,8 +5897,8 @@ img{
 	position:relative;
 	padding:45px 15px;
 	text-align:center;
-	border-radius:10px;
-	border:1px dashed rgba(255,255,255,0.60);
+	/* border-radius:10px;
+	border:1px dashed rgba(255,255,255,0.60); */
 	transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
@@ -5932,7 +5934,7 @@ img{
 
 .technology-block .inner-box h6{
 	position:relative;
-	color:#ffffff;
+	color:#000;
 	font-weight:600;
 	margin-top:18px;
 	text-transform:uppercase;
@@ -5945,7 +5947,7 @@ img{
 
 .technology-block .inner-box:hover{
 	border-color:#ffffff;
-	background-color:#ffffff;
+	/* background-color:#ffffff; */
 }
 
 .technology-block .inner-box:hover .icon-box{
@@ -5957,10 +5959,10 @@ img{
 }
 
 .technology-section.style-two .technology-block{
-	width:80%;
-	padding:0px 85px;
+	width:25%;
+	padding:0px 20px;
 	margin: auto;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .technology-section.style-two .technology-block h6{
@@ -7157,6 +7159,12 @@ img{
 	position:relative;
 	overflow:hidden;
 	z-index:1;
+}
+.counter-section .auto-container{
+	position: static;
+    max-width: 1366px;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
 }
 
 .counter-section .inner-container{
