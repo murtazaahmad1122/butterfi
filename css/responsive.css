@@ -5,6 +5,9 @@
 	.page-wrapper{
 		overflow:hidden;	
 	}
+	.centerd1{
+		margin-top: 80px;
+	}
 	
 }
 
@@ -216,7 +219,7 @@
 	.header-top-four .top-left,
 	.header-top-two .top-left,
 	.banner-section-two .pattern-layer-one,
-	.main-header .header-lower .search-box{
+	.main-header .header-lower .search-box {
 		display:none;
 	}
 	
@@ -361,7 +364,7 @@
 	.technology-section.style-two .technology-block{
 		width:100%;
 		/* align-items: center; */
-		margin-right: 100px;
+		/* margin-right: 100px; */
 	}
 	/* .technology-section.style-two .technology-block{
 		width:40%;

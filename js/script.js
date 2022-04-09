@@ -661,7 +661,8 @@
 			}
 			
 			if ($(this).next('.acc-content').is(':visible')){
-				return false;
+				$(outerBox).find('.accordion').children('.acc-content').slideUp(300);
+
 			}else{
 				$(this).addClass('active');
 				$(outerBox).children('.accordion').removeClass('active-block');

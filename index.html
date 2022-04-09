@@ -29,6 +29,30 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style>
+	#more {display: none;}
+	.addReadMore.showlesscontent .SecSec,
+    .addReadMore.showlesscontent .readLess {
+        display: none;
+    }
+
+    .addReadMore.showmorecontent .readMore {
+        display: none;
+    }
+	.addReadMore .readMore,
+    .addReadMore .readLess {
+        /* font-weight:; */
+        margin-left: 2px;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .addReadMoreWrapTxt.showmorecontent .SecSec,
+    .addReadMoreWrapTxt.showmorecontent .readLess {
+        display: block;
+    }
+</style>
+
 </head>
 
 <body class="hidden-bar-wrapper">
@@ -39,17 +63,17 @@
     <div class="preloader"></div>
  	
  	<!-- Main Header-->
-    <header class="main-header header-style-two">
+    <header class="main-header header-style-two ">
     	
 		<!-- Header Top Two -->
       
 		
 		<!--Header-Upper-->
-        <div class="header-upper">
+        <div class="header-upper ">
         	<div class="outer-container clearfix">
             	
 				<div class="pull-left logo-box">
-					<!-- <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div> -->
+					<div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
 				</div>
 				
 			
@@ -77,15 +101,15 @@
 							
 								</li>
 								
-								<li class="team.html"><a href="#">Team</a>
+								<li class=""><a href="team.html">Team</a>
 									
 								</li>
-								<li class="services.html"><a href="#">Our Services</a>
+								<li class=""><a href="services.html">Our Services</a>
 									
 								</li>
-								<li><a href="">Faq</a></li>
+								<li><a href="faq.html">Faq</a></li>
 								
-								<li><a  href="">Contact us</a></li>
+								<li><a  href="contact.html">Contact us</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -110,11 +134,11 @@
         <!--End Header Upper-->
         
 		<!-- Sticky Header  -->
-        <div class="sticky-header">
+        <div class="sticky-header .d-sm-none">
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="" title=""><img src="" alt="" title=""></a>
+                    <a href="" title=""><img src="images/logo.png" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -181,7 +205,7 @@
 									<li><i class="fa-solid fa-check"></i> Analyze and compare financing offers like a pro</li>
 								 </div>
 								 <div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
+									<a href="" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
 								</div>
 								</div>
 								
@@ -277,6 +301,9 @@
 	
 	<!-- Counter Section -->
 	<!-- service box -->
+	<div class="centerd1" style="text-align: center;">
+		<h2>Services</h2>
+	</div>
 	<section class="technology-section style-two" >
 		
 		<div class="auto-container">
@@ -289,7 +316,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-money-bag"></span>
 						</div>
@@ -300,9 +327,9 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<!-- <a href="" class="overlay-link"></a> -->
 						<div class="icon-box">
-							<span class="flaticon-web-browser"></span>
+							<span class="flaticon-growth"></span>
 						</div>
 						<h6>More funding offers from pre-matched investors</h6>
 					</div>
@@ -311,7 +338,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-web-browser"></span>
 						</div>
@@ -322,7 +349,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-network-1"></span>
 						</div>
@@ -347,7 +374,18 @@
 							<div class="inner-box" style="font-size: 24px;">
 				            <h2 style="color: black;font-weight: bold;">BF Profiling (Free)</h2>
 		                               
-								<div class="" style="color: black; line-height: 40px;"> Our initial diagnostics tool to profile your company’s fundability in order to tell your current potential for a non-dilutive fundraising round.</div>
+								<div class="addReadMore showlesscontent" style="color: black; line-height: 40px;"> Our initial diagnostics tool to profile your company’s
+									
+									fundability in order to tell your current potential for a non-dilutive fundraising round.
+                                    
+									With BF Fundability you will be asked 7 questions (average completion time – 2:35 minutes) and you will get immediate answers to the following questions -
+									Can I qualify for non-dilutive financing (am I fundable)?
+									Estimated amounts I can expect to raise
+									Strengths and weaknesses in my business profile for funding
+
+							     <!-- <a class="read-more" onclick="myFunction1()" id="myBtn1">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+
+								</div>
 							</div>
 							<!-- Feature Block -->
 						</div>
@@ -378,8 +416,15 @@
 						   <div class="inner-box" style="font-size: 24px;">
 						   <h2 style="color: black;font-weight: bold;">BF Matching</h2>
 									  
-							   <div class="" style="color: black; line-height: 40px;"> The analytics tool which matches your actual business and financial profile with the dynamic funding criteria of over 100 non-dilution lenders and investors.</div>
-						   </div>
+							   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;"> Our self-assessment tool to prepare your full funding profile and unlock your financing potential.
+                               
+								You will be asked about 20 questions (average completion time – 9:25 minutes) and you will get a full report to better understand and prepare your next funding round , including a comprehansive analysis on the most relevant financing models for your company. Butterfi is now ready to introduce you to those funders who seek companies with an exact same profile like yours. Butterfly funding process is faster and generates more funding offers, higher success rate for closing and in better funding terms for you.
+							
+							<!-- <a class="read-more" onclick="myFunctions()" id="myBtns">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+							  
+							</div>
+						   
+							</div>
 						   <!-- Feature Block -->
 						   
 					   </div>
@@ -403,16 +448,19 @@
 					   <!-- <div class="feature-text"> Our initial diagnostics tool to profile your company’s fundability in order to tell your current potential for a non-dilutive fundraising round.</div> -->
 					   <div class="inner-box" style="font-size: 24px;">
 					   <h2 style="color: black;font-weight: bold;">
-						BF Analytics</h2>
-								  
-						   <div class="" style="color: black; line-height: 40px;">
-							BF Analytics
-							BF Analytics outlines the strengths and compatibility of a specific funding offer which your received, including benchmarking to market standards and offers comparison.</div>
-					   </div>
+						BF Analytics</h2>			  
+						   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;">
+							BF Analytics outlines the strengths and compatibility of a specific<span id="dots">...</span>	
+							<span id="more">
+							funding offer which your received, including benchmarking to market standards and offers comparison.
+						    </span>
+							<a class="read-more" onclick="myFunction()" id="myBtn3">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+						</div>
+					</div>
 					   <!-- Feature Block -->
 					   
 				   </div>
-				   
+				  
 				   <!-- <a href="#" class="lightbox-image theme-btn btn-style-two"><span class="txt"><i class="play-icon"><img src="images/icons/play-icon.png" alt="" /></i>&ensp; intro Video</span></a> -->
 				   
 			   </div>
@@ -441,8 +489,14 @@
 				   <h2 style="color: black;font-weight: bold;">
 					BF Wrok Flow</h2>
 							  
-					   <div class="" style="color: black; line-height: 40px;">
-						Our One stop shop for non-dilutive transacting and related tasks</div>
+					   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;">
+						Our One stop shop for non-dilutive transacting and related tasks
+                       
+                   	With BF WorkFlow you can manage your entire non-dilutive funding cycle from listing and pitching potential funders to communications, legal drafts and closing procedures
+				 
+				<!-- <a class="read-more" onclick="myFunction()" id="myBtn4">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+                  
+				</div>
 				   </div>
 				   <!-- Feature Block -->
 				   
@@ -463,186 +517,41 @@
 	<!-- end -->
 	<!-- services -->
 
-	<section class="features-top-area  wow fadeIn services-section-two"  >
-        <div class="auto-container" >
-			<div class="upper-box" >
-				<div class="icon-one" style="background-image: url(assest/gallery-assets/images/icons/icon-1.png)"></div>
-				<div class="icon-two" style="background-image: url(assest/gallery-assets/images/icons/icon-2.png)"></div>
-				<div class="icon-three" style="background-image: url(assest/gallery-assets/images/icons/icon-3.png)"></div>
-				<!-- Sec Title -->
-				<div class="sec-title light ">
-					<h2 style="color: black ;">SERVICES</h2>
-					<h4 >With Butterfi FREE tools tech companies can see:</h4>
-					<p style="font-size: 22px;"><i class="flaticon-long-arrow-pointing-to-the-right"></i> 5X increase of funding success rate</p>
-					<p style="font-size: 22px;"><i class="flaticon-long-arrow-pointing-to-the-right"></i> More funding offers from pre-matched investors</p>
-					<p style="font-size: 22px;"><i class="flaticon-long-arrow-pointing-to-the-right"></i> Better funding terms</p>
-					<p style="font-size: 22px;"><i class="flaticon-long-arrow-pointing-to-the-right"></i> Quicker fundraising process</p>
-				
-				</div>
-			</div>
-				<!-- <div class="process-section">
-					<div class="auto-container"></div>
-					<div class="row">
-					<div class="process-block col-lg-8 col-md-8 col-sm-12">
-						<div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
-							<div class="number-box">01</div>
-							<h4><a href="services-detail.html">End to End Solutions and Services Guaranteed</a></h4>
-							<div class="text">The Butterfi process protects your private information at the highest level.  </div>
-							<a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
-						</div>
-					</div>
-				</div>
-				</div> -->
-				
-			
-				
-			</div>
-			<div class="inner-container">
-				<div class="row clearfix">
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-money-bag"></span>
-							</div>
-							<h5><a href="">
-                                BF Fundability (Free)</a></h5>
-							<div class="text">
-                                
-                               </div>
-                                <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-                            </div>
-					</div>
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-technical-support"></span>
-							</div>
-							<h5><a href="">BF Profiling (Free)</a></h5>
-							<div class="text">
-                               
-                                Our self-assessment tool to prepare your full funding profile and unlock your financing potential.</div>
-                                <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-                            </div>
-					</div>
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-iot"></span>
-							</div>
-							<h5><a href="">BF Matching</a></h5>
-							<div class="text">The analytics tool which matches your actual business and financial profile with the dynamic funding criteria of over 100 non-dilution lenders and investors.</div>
-                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-                        </div>
-					</div>
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-monitor"></span>
-							</div>
-							<h5><a href="">BF Analytics</a></h5>
-							<div class="text">BF Analytics outlines the strengths and compatibility of a specific funding offer which your received, including benchmarking to market standards and offers comparison.</div>
-                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-                        </div>
-					</div>
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-monitor-2"></span>
-							</div>
-							<h5><a href="">BF Smart DataRoom</a></h5>
-                            <div class="text">One place where you can manage and share your data. Designed for non-dilutive funding processes and the variety of data requirements and special formats requested by non-dilutive investors</div>
-							<a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-						
-                        </div>
-					</div>
-					
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="shape-one"></div>
-							<div class="shape-two"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-human-resources"></span>
-							</div>
-							<h5><a href="">
-                                BF Wrok Flow</a></h5>
-							
-                                <div class="text">Our One stop shop for non-dilutive transacting and related tasks</div>
-					         <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
-                           
-                            </div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-       
-    </section>
+	
 <!-- end -->
 <!-- privacy -->
-<section class="process-section"  style="background: rgba(255, 255, 255, 0) url(images/main-slider/bg-image.jpg) no-repeat scroll center center / cover;">
-	<!-- <div class="pattern-layer-one" style="background-image: url(images/background/pattern-11.jpg)"></div>
-	<div class="pattern-layer-two" style="background-image: url(images/background/pattern-12.jpg)"></div> -->
-	<div class="auto-container">
-		<!-- Sec Title -->
-		<div class="sec-title centered">
-            <h2>PRIVACY</h2>			
-		</div>
+<section class="info-section" style="background-image: url(images/background/6.jpg);background-color: #E7F0FF;">
+	<div class="auto-container" style="">
 		<div class="row clearfix">
 			
-			<!-- Process Block -->
-			<div class="process-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
-					<div class="number-box">01</div>
-					<!-- <h4><a href="services-detail.html">End to End Solutions and Services Guaranteed</a></h4> -->
-					<div class="text">The Butterfi process protects your private information at the highest level.The Butterfi process protects your privat.  </div>
-					<a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
+			<!-- Logo Column -->
+		
+			
+			<!-- Info Column -->
+			<div class="info-column col-lg-2 col-md-2">
+			
+			</div>
+			
+			<!-- Info Column -->
+			<div class="info-column col-lg-8 col-md-10 col-sm-12">
+				<div class="inner-column">
+					<!-- <div class="icon-box"><span class="flaticon-phone-call"></span></div> -->
+					<ul>
+						<li style="align-items: center; text-align: center;"><strong><h2>Privacy</h2> </strong></li>
+						<li style="font-size: 20px;">The Butterfi process protects your private information at the highest level. Butterfi’s onboarding process does not require connecting your databases, nor does it call you to export your data to us. We appreciate your privacy so our tools require the very exact information which we need in order to help you with smart insights and excellent matching.</li>
+					</ul>
 				</div>
 			</div>
 			
-			<!-- Process Block -->
-			<div class="process-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-					<div class="number-box">02</div>
-					<!-- <h4><a href="#">Ahead of The Curve We Future-proof Your IT</a></h4> -->
-					<div class="text">Butterfi’s onboarding process does not require connecting your databases, nor does it call you to export your data to us.</div>
-					<a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
-				</div>
-			</div>
+			<!-- Info Column -->
+			<div class="info-column col-lg-2 col-md-2">
 			
-			<!-- Process Block -->
-			<div class="process-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
-					<div class="number-box">03</div>
-					<!-- <h4><a href="#">Experience Certainty Every Project Executed Successful</a></h4> -->
-					<div class="text">We appreciate your privacy so our tools require the very exact information which we need in order to help you with smart.</div>
-					<a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right" ></span>Read More</a>
-				</div>
 			</div>
 			
 		</div>
 	</div>
 </section>
+
 
 <!-- end -->
 
@@ -716,7 +625,51 @@
 	</section>
 	
 	<!-- News Section Two -->
-	
+	<!-- inforamtion -->
+	<section class="info-section" style="background-image: url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Logo Column -->
+			
+				
+				<!-- Info Column -->
+				<div class="info-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-column">
+						<div class="icon-box"><span class="flaticon-pin"></span></div>
+						<ul>
+							<li><strong>Address</strong></li>
+							<li>125, Suitland Street, USA</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Info Column -->
+				<div class="info-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-column">
+						<div class="icon-box"><span class="flaticon-phone-call"></span></div>
+						<ul>
+							<li><strong>Phone</strong></li>
+							<li>+ 786 875 864 75</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Info Column -->
+				<div class="info-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-column">
+						<div class="icon-box"><span class="flaticon-email-1"></span></div>
+						<ul>
+							<li><strong>E-Mail</strong></li>
+							<li>support@Butterfi.com</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- end -->
 	<!-- End News Section Two -->
 	
 	<!-- Main Footer -->
@@ -771,38 +724,20 @@
 					</div>
 					
 					<!-- Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-						<div class="row clearfix">
+					<div class="footer-column col-lg-5 col-md-6 col-sm-12">
+						<div class="footer-widget subscribe-widget">
+							<h5>Get latest Updates</h5>
 							
-							<!-- Footer Column -->
-							<div class="footer-column col-lg-2 ">
-							
+							<!--Emailed Form-->
+							<div class="emailed-form">
+								<form method="post" action="">
+									<div class="form-group">
+										<input type="email" name="email" value="" placeholder="Enter Your Email" required>
+										<button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Submit Now</span></button>
+
+									</div>
+								</form>
 							</div>
-							
-							<!-- Footer Column -->
-							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-								<div class="footer-widget contact-widget">
-									<h5>Contact Us</h5>
-									<ul>
-										<li>
-											<span class="icon flaticon-placeholder-2"></span>
-											<strong>Address</strong>
-											125, Suitland Street, USA
-										</li>
-										<li>
-											<span class="icon flaticon-phone-call"></span>
-											<strong>Phone</strong>
-											<a href="tel:+786-875-864-75">+ 786 875 864 75</a>
-										</li>
-										<li>
-											<span class="icon flaticon-email-1"></span>
-											<strong>E-Mail</strong>
-											<a href="mailto:support@globex.com">support@globex.com</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							
 						</div>
 					</div>
 					
@@ -810,24 +745,7 @@
 			</div>
 			
 			<!-- Footer Bottom -->
-			<div class="footer-bottom">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<!-- Column -->
-						<div class="column col-lg-6 col-md-12 col-sm-12">
-							<div class="copyright">Copyright &copy; 2022 Butterfi All Rights Reserved.</div>
-						</div>
-						<!-- Column -->
-						<div class="column col-lg-6 col-md-12 col-sm-12">
-							<ul class="footer-nav">
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Privacy</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+		
 			
 		</div>
 	</footer>
@@ -870,8 +788,44 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 <script src="js/color-settings.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+<script>
+
+function AddReadMore() {
+        //This limit you can set after how much characters you want to show Read More.
+        var carLmt = 200;
+        // Text to show when text is collapsed
+        var readMoreTxt = " ... Read More";
+        // Text to show when text is expanded
+        var readLessTxt = " Read Less";
+        //Traverse all selectors with this class and manupulate HTML part to show Read More
+        $(".addReadMore").each(function() {
+            if ($(this).find(".firstSec").length)
+                return;
+
+            var allstr = $(this).text();
+            if (allstr.length > carLmt) {
+                var firstSet = allstr.substring(0, carLmt);
+                var secdHalf = allstr.substring(carLmt, allstr.length);
+                var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+                $(this).html(strtoadd);
+            }
+
+        });
+        //Read More and Read Less Click Event binding
+        $(document).on("click", ".readMore,.readLess", function() {
+            $(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
+        });
+    }
+    $(function() {
+        //Calling function after Page Load
+        AddReadMore();
+    });
+</script>
 
 </body>
 
-<!-- Mirrored from expert-themes.com/html/globex/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Mar 2022 08:11:23 GMT -->
+
 </html>
