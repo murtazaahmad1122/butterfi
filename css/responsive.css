@@ -316,8 +316,12 @@
 	.team-section-two .sec-title .text br,
 	.banner-section-two .image-column .image,
 	.team-section .sec-title .text br,
-	.testimonial-section .sec-title .text br{
+	.testimonial-section .sec-title .text .d-none br
+	{
 		display:none;
+	}
+	display-none{
+		display: none;
 	}
 	
 	.technology-section .blocks-column .inner-column .technology-block:nth-child(4){
@@ -639,7 +643,9 @@
 		width:100%;
 		margin:0px;
 	}
-	
+	.display-none{
+		display: none;
+	}
 	.main-header .sticky-header .outer-box{
 		display:block;
 		right: 15px;
