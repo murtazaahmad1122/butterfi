@@ -793,7 +793,17 @@
 
 
 <script>
+function resize() {
+    if ($(window).width() < 514) {
+     $('html').removeClass('sticky-header');
+    }
+    else {$('html').addClass('');}
+}
 
+$(document).ready( function() {
+    $(window).resize(resize);
+    resize();
+});
 function AddReadMore() {
         //This limit you can set after how much characters you want to show Read More.
         var carLmt = 200;

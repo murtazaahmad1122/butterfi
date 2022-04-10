@@ -116,6 +116,7 @@
 		hiddenBarCloser.on('click', function () {
 			$('body').removeClass('visible-menu-bar');
 			hiddenBar.removeClass('visible-sidebar');
+			// hiddenBar.removeClass('header-bar');
 		});
 	}
 	
