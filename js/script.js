@@ -22,7 +22,8 @@
 			if (windowpos >= HeaderHight) {
 				siteHeader.addClass('fixed-header');
 				scrollLink.fadeIn(300);
-			} else {
+			} 
+			else {
 				siteHeader.removeClass('fixed-header');
 				scrollLink.fadeOut(300);
 			}

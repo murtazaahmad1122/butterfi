@@ -63,7 +63,7 @@
     <div class="preloader"></div>
  	
  	<!-- Main Header-->
-    <header class="main-header header-style-two ">
+    <header class="main-header  header-style-two ">
     	
 		<!-- Header Top Two -->
       
@@ -138,12 +138,12 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left .display-none ">
-                    <a href="" title=""><img src="images/logo.png" alt="" title=""></a>
+                    <a href="" title=""><img src="images/logo.png" class=".display-none" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
                     <!-- Main Menu -->
-                    <nav class="main-menu">
+                    <nav class="main-menu .display-none ">
                         <!--Keep This Empty / Menu will come through Javascript-->
                     </nav><!-- Main Menu End-->
 					
@@ -455,11 +455,11 @@
 					   <h2 style="color: black;font-weight: bold;">
 						BF Analytics</h2>			  
 						   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;">
-							BF Analytics outlines the strengths and compatibility of a specific<span id="dots">...</span>	
-							<span id="more">
+							BF Analytics outlines the strengths and compatibility of a specific
+							
 							funding offer which your received, including benchmarking to market standards and offers comparison.
-						    </span>
-							<a class="read-more" onclick="myFunction()" id="myBtn3">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+						   
+							<!-- <a class="read-more" onclick="myFunction()" id="myBtn3">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
 						</div>
 					</div>
 					   <!-- Feature Block -->
@@ -793,17 +793,17 @@
 
 
 <script>
-function resize() {
-    if ($(window).width() < 514) {
-     $('html').removeClass('sticky-header');
-    }
-    else {$('html').addClass('');}
-}
+// function resize() {
+//     if ($(window).width() < 514) {
+//      $('html').removeClass('sticky-header');
+//     }
+//     else {$('html').addClass('');}
+// }
 
-$(document).ready( function() {
-    $(window).resize(resize);
-    resize();
-});
+// $(document).ready( function() {
+//     $(window).resize(resize);
+//     resize();
+// });
 function AddReadMore() {
         //This limit you can set after how much characters you want to show Read More.
         var carLmt = 200;
