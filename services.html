@@ -29,8 +29,31 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
 
+</head>
+<style>
+	#more {display: none;}
+	.addReadMore.showlesscontent .SecSec,
+    .addReadMore.showlesscontent .readLess {
+        display: none;
+    }
+
+    .addReadMore.showmorecontent .readMore {
+        display: none;
+    }
+	.addReadMore .readMore,
+    .addReadMore .readLess {
+        /* font-weight:; */
+        margin-left: 2px;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .addReadMoreWrapTxt.showmorecontent .SecSec,
+    .addReadMoreWrapTxt.showmorecontent .readLess {
+        display: block;
+    }
+</style>
 <body class="hidden-bar-wrapper">
 
 <div class="page-wrapper">
@@ -274,12 +297,18 @@
 							<div class="inner-box" style="font-size: 24px;">
 				            <h2 style="color: black;font-weight: bold;">BF Profiling (Free)</h2>
 		                               
-								<div class="" style="color: black; line-height: 40px;"> Our initial diagnostics tool to profile your company’s fundability in order to tell your current potential for a non-dilutive fundraising round.
-
+								<div class="addReadMore showlesscontent" style="color: black; line-height: 40px;"> Our initial diagnostics tool to profile your company’s
+									
+									fundability in order to tell your current potential for a non-dilutive fundraising round.
+                                    
 									With BF Fundability you will be asked 7 questions (average completion time – 2:35 minutes) and you will get immediate answers to the following questions -
 									Can I qualify for non-dilutive financing (am I fundable)?
 									Estimated amounts I can expect to raise
-									Strengths and weaknesses in my business profile for funding</div>
+									Strengths and weaknesses in my business profile for funding
+
+							     <!-- <a class="read-more" onclick="myFunction1()" id="myBtn1">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+
+								</div>
 							</div>
 							<!-- Feature Block -->
 						</div>
@@ -310,10 +339,15 @@
 						   <div class="inner-box" style="font-size: 24px;">
 						   <h2 style="color: black;font-weight: bold;">BF Matching</h2>
 									  
-							   <div class="" style="color: black; line-height: 40px;"> Our self-assessment tool to prepare your full funding profile and unlock your financing potential.
-
-								You will be asked about 20 questions (average completion time – 9:25 minutes) and you will get a full report to better understand and prepare your next funding round , including a comprehansive analysis on the most relevant financing models for your company. Butterfi is now ready to introduce you to those funders who seek companies with an exact same profile like yours. Butterfly funding process is faster and generates more funding offers, higher success rate for closing and in better funding terms for you.</div>
-						   </div>
+							   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;"> Our self-assessment tool to prepare your full funding profile and unlock your financing potential.
+                               
+								You will be asked about 20 questions (average completion time – 9:25 minutes) and you will get a full report to better understand and prepare your next funding round , including a comprehansive analysis on the most relevant financing models for your company. Butterfi is now ready to introduce you to those funders who seek companies with an exact same profile like yours. Butterfly funding process is faster and generates more funding offers, higher success rate for closing and in better funding terms for you.
+							
+							<!-- <a class="read-more" onclick="myFunctions()" id="myBtns">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+							  
+							</div>
+						   
+							</div>
 						   <!-- Feature Block -->
 						   
 					   </div>
@@ -337,15 +371,19 @@
 					   <!-- <div class="feature-text"> Our initial diagnostics tool to profile your company’s fundability in order to tell your current potential for a non-dilutive fundraising round.</div> -->
 					   <div class="inner-box" style="font-size: 24px;">
 					   <h2 style="color: black;font-weight: bold;">
-						BF Analytics</h2>
-								  
-						   <div class="" style="color: black; line-height: 40px;">
-							BF Analytics outlines the strengths and compatibility of a specific funding offer which your received, including benchmarking to market standards and offers comparison.</div>
-					   </div>
+						BF Analytics</h2>			  
+						   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;">
+							BF Analytics outlines the strengths and compatibility of a specific<span id="dots">...</span>	
+							<span id="more">
+							funding offer which your received, including benchmarking to market standards and offers comparison.
+						    </span>
+							<a class="read-more" onclick="myFunction()" id="myBtn3">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+						</div>
+					</div>
 					   <!-- Feature Block -->
 					   
 				   </div>
-				   
+				  
 				   <!-- <a href="#" class="lightbox-image theme-btn btn-style-two"><span class="txt"><i class="play-icon"><img src="images/icons/play-icon.png" alt="" /></i>&ensp; intro Video</span></a> -->
 				   
 			   </div>
@@ -374,10 +412,14 @@
 				   <h2 style="color: black;font-weight: bold;">
 					BF Wrok Flow</h2>
 							  
-					   <div class="" style="color: black; line-height: 40px;">
+					   <div class="addReadMore showlesscontent" style="color: black; line-height: 40px;">
 						Our One stop shop for non-dilutive transacting and related tasks
-
-With BF WorkFlow you can manage your entire non-dilutive funding cycle from listing and pitching potential funders to communications, legal drafts and closing procedures</div>
+                       
+                   	With BF WorkFlow you can manage your entire non-dilutive funding cycle from listing and pitching potential funders to communications, legal drafts and closing procedures
+				 
+				<!-- <a class="read-more" onclick="myFunction()" id="myBtn4">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a> -->
+                  
+				</div>
 				   </div>
 				   <!-- Feature Block -->
 				   
@@ -532,22 +574,7 @@ With BF WorkFlow you can manage your entire non-dilutive funding cycle from list
 <!-- End Header Search -->
 
 <!--Scroll to top-->
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-	
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.display === "block") {
-		  content.style.display = "none";
-		} else {
-		  content.style.display = "block";
-		}
-	  });
-	}
-	</script>
+
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
 <script src="js/jquery.js"></script>
@@ -565,7 +592,42 @@ With BF WorkFlow you can manage your entire non-dilutive funding cycle from list
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 <script src="js/color-settings.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
+<script>
+
+	function AddReadMore() {
+			//This limit you can set after how much characters you want to show Read More.
+			var carLmt = 200;
+			// Text to show when text is collapsed
+			var readMoreTxt = " ... Read More";
+			// Text to show when text is expanded
+			var readLessTxt = " Read Less";
+			//Traverse all selectors with this class and manupulate HTML part to show Read More
+			$(".addReadMore").each(function() {
+				if ($(this).find(".firstSec").length)
+					return;
+	
+				var allstr = $(this).text();
+				if (allstr.length > carLmt) {
+					var firstSet = allstr.substring(0, carLmt);
+					var secdHalf = allstr.substring(carLmt, allstr.length);
+					var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+					$(this).html(strtoadd);
+				}
+	
+			});
+			//Read More and Read Less Click Event binding
+			$(document).on("click", ".readMore,.readLess", function() {
+				$(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
+			});
+		}
+		$(function() {
+			//Calling function after Page Load
+			AddReadMore();
+		});
+	</script>
 </body>
 
 <!-- Mirrored from expert-themes.com/html/globex/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Mar 2022 08:11:42 GMT -->
