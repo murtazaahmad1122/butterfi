@@ -1,3 +1,33 @@
+
+
+<?php
+
+if(isset($_POST['submit'])){
+
+
+$from = $_POST["email"];
+$to = "murtazaahmad428@gmail.com";
+
+$username = $_POST["username"];
+$department = $_POST["department"];
+
+$subject = "This is subject";
+$message = "User Name: ". $username .", Department: ". $department ;
+
+$header = "From:murtazalinks76@gmail.com \r\n";
+
+$retval = mail ($to,$subject,$message,$header);
+
+if( $retval == true ) {
+   echo "Message sent successfully...";
+}else {
+   echo "Message could not be sent...";
+}
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -312,7 +342,7 @@
 						</div> -->
 
 						<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-							<button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Send Massage</span></button>
+							<button class="theme-btn btn-style-two" type="submit" name="submit"><span class="txt">Send Massage</span></button>
 						</div>
 					</div>
 				</form>
