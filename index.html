@@ -92,8 +92,8 @@
 						</div>
 						
 						<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-							<ul class="navigation clearfix">
-								<li class=""><a href="index.html">Home</a>
+							<ul class="navigation clearfix ">
+								<li ><a href="index.html" class="active">Home</a>
 						
 								</li>
 								<li ><a  href="about.html">About</a>
@@ -833,7 +833,20 @@ function AddReadMore() {
         //Calling function after Page Load
         AddReadMore();
     });
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
 </script>
+
 
 </body>
 
