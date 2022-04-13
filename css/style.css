@@ -159,7 +159,7 @@ h6{
 .auto-container{
 	position:static;
 	max-width:1200px;
-	padding:0px 15px;
+	padding:0px 25px;
 	margin:0 auto;
 }
 
@@ -1633,7 +1633,7 @@ img{
 	position:absolute;
 	left:0px;
 	right:0px;
-	border-bottom:1px solid rgba(255,255,255,0.15);
+	/* border-bottom:1px solid rgba(255,255,255,0.15); */
 }
 
 .header-style-two .header-upper{
@@ -4754,7 +4754,7 @@ img{
 
 .about-section .content-column{
 	position:relative;
-	margin-bottom:40px;
+	/* margin-bottom:40px; */
 }
 
 .about-section .sec-title{
@@ -4819,12 +4819,12 @@ img{
 
 .about-section .images-column{
 	position:relative;
-	margin-bottom:40px;
+	margin-bottom:20px;
 }
 
 .about-section .images-column .inner-column{
 	position:relative;
-	padding:50px 0px;
+	padding:0px 0px;
 	text-align:center;
 	background-position:center center;
 	background-repeat:no-repeat;
@@ -9305,6 +9305,7 @@ img{
 .info-section .info-column .inner-column{
 	position:relative;
 	padding-left:60px;
+	/* margin-left: 10px; */
 }
 
 .info-section .info-column .icon-box{
